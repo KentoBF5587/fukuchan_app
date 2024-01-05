@@ -1,0 +1,9 @@
+<% if @random.present? %>
+  <% @random.each do |famous_quote| %>
+    <%= famous_quote.title %>
+    <%= famous_quote.body %>
+  <% end %>
+<% else %>
+  <!-- @randomがnilの場合の処理 -->
+  No random quotes available.
+<% end %>

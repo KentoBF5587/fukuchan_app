@@ -1,0 +1,11 @@
+<p>Q1.これからプログラミング学習ですか？</p>
+<%= image_tag 'computer_programming_woman.png' %>
+<%= form_with(model: @topic, class: 'form-horizonal', role: 'form') do |form| %>
+    <%= form.radio_button :question, "1" %>
+    <%= form.label :question, "はい" %>
+
+    <%= form.radio_button :question, "2" %>
+    <%= form.label :question, "いいえ" %>
+
+    <%= form.submit "次へ" %>
+<% end %>

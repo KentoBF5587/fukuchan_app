@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FukuchanApp</title>
+    <title>プログラミング学習頑張ろう分岐診断</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,14 @@
   </head>
 
   <body>
+  <div class="main">
+  <div class="contents1">
     <%= yield %>
+  </div>
+  <div class="contents2">
+    <div style="padding: 10px; margin-bottom: 10px; border: 5px double #333333;">
+    <%= render "famous_quotes/famous_quote" %>
+    </div>
+    </div>
   </body>
 </html>

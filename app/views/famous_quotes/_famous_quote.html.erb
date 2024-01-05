@@ -1,0 +1,10 @@
+<div><strong>ランダム名言集（全10種類）</strong></div>
+<% if @random.present? %>
+  <% @random.each do |famous_quote| %>
+    <div style="color: green"><%= famous_quote.title %></div>
+    <%= famous_quote.body %>
+  <% end %>
+<% else %>
+  <!-- @randomがnilの場合の処理 -->
+  No random quotes available.
+<% end %>

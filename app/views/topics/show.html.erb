@@ -1,0 +1,27 @@
+<% if @topic.question == 1 %>
+<p>Q2.コンディションはどうですか？</p>
+<%= image_tag 'sports_pro_wrestler_mask.png' %>
+    <%= form_with(model: @topic2) do |form| %>
+       
+        <%= form.radio_button :question, "3" %>
+        <%= form.label :question, "OK" %>
+
+        <%= form.radio_button :question, "4" %>
+        <%= form.label :question, "イマイチ" %>
+        <%= form.submit "次へ" %>
+    <% end %>
+<% end %>
+
+<% if @topic.question == 2 %>
+<p>Q2.今日はお休みorお仕事ですか？</p>
+<%= image_tag 'cat_kotatsu_neko.png' %>
+    <%= form_with(model: @topic2) do |form| %>
+        
+        <%= form.radio_button :question, "5" %>
+        <%= form.label :question, "お出かけ" %>
+
+        <%= form.radio_button :question, "6" %>
+        <%= form.label :question, "お仕事などやることがある" %>
+        <%= form.submit "最後の質問です" %>
+    <% end %>
+<% end %>
