@@ -1,5 +1,6 @@
 <h1>お疲れ様です</h1>
 <%= image_tag 'youchien_ohirune_animal.png' %>
 <div>目を瞑ってクラシック5分くらい聴くと落ち着くかも。<br />それでもキツかったら早く寝て翌朝やるのも手かも…。 </div>
+<%= link_to 'Xでシェアする', "https://twitter.com/intent/tweet?url=#{CGI.escape('https://fukuchan-app.onrender.com/')}&text=#{CGI.escape('【プログラミング学習頑張ろう分岐診断】お疲れ様です')}&hashtags=#{CGI.escape('実験だよ')}", title: 'Xでシェアする', target: '_blank' %>
 <div><%= link_to "おまけ", "/topic3s/omake" %></div>
 <%= link_to "もう一回やる", new_topic_path %>

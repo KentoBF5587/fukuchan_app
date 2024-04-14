@@ -2,8 +2,11 @@
     <h1>よっしゃ頑張りましょう！</h1>
     <%= image_tag 'yaruki_moeru_man.png' %>
     <div>思い立ったが吉日！行ける時には行ってしまいましょう！</div>
+    <%= link_to 'Xでシェアする', "https://twitter.com/intent/tweet?url=#{CGI.escape('https://fukuchan-app.onrender.com/')}&text=#{CGI.escape('【プログラミング学習頑張ろう分岐診断】思い立ったが吉日！')}&hashtags=#{CGI.escape('実験だよ')}", title: 'Xでシェアする', target: '_blank' %>
     <%= link_to "もう一回やる", new_topic_path %>
 <% end %>
+
+
 
 <% if @topic2.question == 4 %>
         <p>Q3.ちょっと疲れていますか？</p>
@@ -19,6 +22,7 @@
     <h1>楽しんでってください！</h1>
     <%= image_tag 'idol_fan_penlight_men.png' %>
     <div>楽しむ時は楽しんでリフレッシュするのも大事ですね！</div>
+    <%= link_to 'Xでシェアする', "https://twitter.com/intent/tweet?url=#{CGI.escape('https://fukuchan-app.onrender.com/')}&text=#{CGI.escape('【プログラミング学習頑張ろう分岐診断】楽しんでってください！')}&hashtags=#{CGI.escape('実験だよ')}", title: 'Xでシェアする', target: '_blank' %>
     <%= link_to "もう一回やる", new_topic_path %>
 <% end %>
 
@@ -26,5 +30,6 @@
    <h1>いつもお疲れ様です！</h1>
    <%= image_tag 'kaisya_man.png' %>
    <div>あまり無理し過ぎず……！</div>
+   <%= link_to 'Xでシェアする', "https://twitter.com/intent/tweet?url=#{CGI.escape('https://fukuchan-app.onrender.com/')}&text=#{CGI.escape('【プログラミング学習頑張ろう分岐診断】いつもお疲れ様です！')}&hashtags=#{CGI.escape('実験だよ')}", title: 'Xでシェアする', target: '_blank' %>
    <%= link_to "もう一回やる", new_topic_path %>
 <% end %>
